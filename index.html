@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>gender-lens</title>
     <link rel="stylesheet" href="./src/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monomakh&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -22,12 +25,16 @@
       class="header-link">
       <i class="fa-brands fa-linkedin"></i>
     </a>
-
       </div>
     </header>
     <form action="" class="app-form">
+      <h1 class="app-title">Check the gender of a name</h1>
       <div class="form-group">
-        button
+        <input type="text" class="form-input" id="form-name-input" placeholder="Type first name or full name">
+        <button class="search-btn">
+          i.<i class="fa-solid fa-venus-mars"></i>
+          <span>search</span>
+        </button>
       </div>
       <p class="result"></p>
     </form>
