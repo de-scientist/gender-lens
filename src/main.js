@@ -39,8 +39,11 @@ btn.addEventListener("click", async (ev) => {
     //display error message
       result.textContent = `An error occurred. Please try again later.`;
       console.error("Error fetching data:", error);
+
   } finally {
-      //
+      //enable the button after fetching
+      btn.disabled = false;
+      btn.innerHTML = `<i class="fa-solid fa-venus-mars"></i><span> Search</span>`;
   }
 })
 
