@@ -8,6 +8,7 @@ btn.addEventListener("click", async (ev) => {
   ev.preventDefault()
   const providedName  = input.value;
 
+  //handle empty input
   if (providedName === "") {
     result.textContent = `Please provide a name`;
     return
