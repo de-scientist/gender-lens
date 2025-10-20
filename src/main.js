@@ -25,7 +25,15 @@ btn.addEventListener("click", async (ev) => {
     const data = await response.json();
 
     //handle no data found
+    if (data.gender === null) {
+      result.textContent = `No data found for the name <strong>${providedName}</strong>`;
 
+      //enable the button after fetching
+      btn.disabled= false;
+      btn.textContent = "Search";
+      return;
+
+    }
 
   } catch (error) {
     
