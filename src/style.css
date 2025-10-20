@@ -33,7 +33,7 @@ body {
 
 .header {
   margin-bottom: 2rem;
-  display: block;
+  display: grid;
   justify-content: space-around;
 }
 
@@ -41,6 +41,24 @@ body {
   margin-top: 2rem;
   display: block;
   justify-content: space-around;
+}
+
+.app-title {
+  font-size: 2.5rem;
+  margin: 0;
+
+}
+
+.form-group {
+  margin: 2rem 0;
+  padding-top: 2rem;
+  align-items: center;
+}
+
+.result {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  align-items: center;
 }
 
 h1 {
