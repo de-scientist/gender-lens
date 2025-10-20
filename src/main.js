@@ -28,21 +28,19 @@ btn.addEventListener("click", async (ev) => {
     //handle no data found
     if (data.gender === null) {
       result.textContent = `No data found for the name <strong>${providedName}</strong>`;
-
-      //enable the button after fetching
-      btn.disabled= false;
-      btn.textContent = "Search";
       return;
 
     } else {
       //display the result
       result.innerHTML = `<strong>${providedName}</strong> is most likely a <strong>${gender}</strong> with a probability of <strong>${probability * 100}</strong>% certainty.`;
-
-      
     }
 
   } catch (error) {
-    
+    //display error message
+      result.textContent = `An error occurred. Please try again later.`;
+      console.error("Error fetching data:", error);
+  } finally {
+      //
   }
 })
 
