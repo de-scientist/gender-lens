@@ -37,6 +37,12 @@ body {
   justify-content: space-around;
 }
 
+.app-form{
+  margin-top: 2rem;
+  display: block;
+  justify-content: space-around;
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
