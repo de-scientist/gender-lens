@@ -20,6 +20,12 @@ btn.addEventListener("click", async (ev) => {
     btn.disabled= true;
     btn.textContent = "Searching..."
 
+    //fetch data from the api
+    const response = await fetch(`https://api.genderize.io?name=${providedName}`)
+    const data = await response.json();
+
+    //handle no data found
+
 
   } catch (error) {
     
