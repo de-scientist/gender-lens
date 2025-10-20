@@ -14,5 +14,15 @@ btn.addEventListener("click", async (ev) => {
     return
   }
 
+  //fetch data from the api
+  try {
+    //disable the button while fetching 
+    btn.disabled= true;
+    btn.textContent = "Searching..."
+
+
+  } catch (error) {
+    
+  }
 })
 
